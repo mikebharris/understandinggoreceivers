@@ -2,7 +2,7 @@
 
 I had confused myself about using Receivers and the difference between using pointer receivers and non-pointer receivers in different types of context.
 
-This could have been easily solved by me re-reading pages 158-159 of The Go Programming Language by Donovan and Kernighan, but I'd got myself into a programming pickle and had forgotten to go back to basics.
+This could have been easily solved by me re-reading pages 158-159 of _The Go Programming Language_ by Donovan and Kernighan, but I'd got myself into a programming pickle and had forgotten to go back to basics.
 
 I finally did and with the help of @hoegrammer, we worked it out by making a simple coding example that tested our assumptions.
 
