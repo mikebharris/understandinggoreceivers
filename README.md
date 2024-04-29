@@ -15,17 +15,17 @@ We then have a _Box_ of these _thing containers_ and we call the _Run()_ method 
 In one example the Box uses pointer receivers, meaning that the operations we do act on __the things pointed to__, which amount to the instances of the things declared in the test.  This leads us towards a more classic OO-style as implemented in languages like Java:
 
 ```go
-	boxOfThingContainersUsingPointerReceivers := BoxOfThingContainersUsingPointerReceivers{}
-	boxOfThingContainersUsingPointerReceivers.AddThingContainer(&integerContainer)
-	boxOfThingContainersUsingPointerReceivers.AddThingContainer(&runeContainer)
-	boxOfThingContainersUsingPointerReceivers.RunThings()
+boxOfThingContainersUsingPointerReceivers := BoxOfThingContainersUsingPointerReceivers{}
+boxOfThingContainersUsingPointerReceivers.AddThingContainer(&integerContainer)
+boxOfThingContainersUsingPointerReceivers.AddThingContainer(&runeContainer)
+boxOfThingContainersUsingPointerReceivers.RunThings()
 ```
 
 In the other example, the Box uses non-pointer receivers, meaning that the operations we do act on __copies__ of the things declared in the tests.  We therefore need to return copies of the things at the end of the methods, which leads us towards a more functional programming style as written in languages like JavaScript:
 
 ```go
-	BoxOfThingContainers{}.
-		AddThingContainer(&integerContainer).
-		AddThingContainer(&runeContainer).
-		RunThings()
+BoxOfThingContainers{}.
+    AddThingContainer(&integerContainer).
+    AddThingContainer(&runeContainer).
+    RunThings()
 ```
