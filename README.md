@@ -1,4 +1,4 @@
-# Understanding Go Recveivers and their constructs
+# Understanding Go Receivers and their constructs
 
 I had confused myself about using Receivers and the difference between using pointer receivers and non-pointer receivers in different types of context.
 
